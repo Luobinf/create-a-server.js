@@ -30,7 +30,7 @@ var server = http.createServer(function(request, response){
     response.write('body{background-color: white}')
     response.end()
   }else if(path === '/main.js') {
-    response.setHeader('Content-Type', 'text/js;charset=utf-8')
+    response.setHeader('Content-Type', 'text/javascript;charset=utf-8')
     response.write('alert(10)')
     response.end()
   }else {
