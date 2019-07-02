@@ -20,7 +20,6 @@ var server = http.createServer(function(request, response){
   console.log('查询字符串的路径\n' + pathWithQuery)
 
   if(path === '/'){
-    response.statusCode = 200
     response.setHeader('Content-Type', 'text/html;charset=utf-8')
     response.write('<!DOCTYPE><html><head>'+
     '<link rel="stylesheet" href="/style.css">'
